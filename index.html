@@ -1,0 +1,1023 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>PCX Kurýr — Honda PCX 125 for delivery couriers in Prague, from 1 490 Kč a week</title>
+<meta name="description" content="Rent a Honda PCX 125 set up for delivery: box mount, phone holder, USB. 1 490 Kč a week or 4 990 Kč a month, service and replacement scooter included. Apply in 2 minutes.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+:root {
+  /* color */
+  --color-ink: #061f22;
+  --color-ink-deep: #021719;
+  --color-ink-raised: #172b2c;
+  --color-signal: #9a0307;
+  --color-fog: #c1c1c1;
+  --color-paper: #ffffff;
+  --color-muted: rgb(255 255 255 / .76);
+  --color-hairline: rgb(255 255 255 / .26);
+  --color-tint: #0d4a4f;               /* hue used to grade the hero photo toward petrol */
+  --color-ink-stone: #1b3132;          /* base under the scratched texture of split panels */
+
+  /* type */
+  --font-sans: "Golos Text", "Helvetica Neue", Arial, system-ui, sans-serif;
+  --text-display: clamp(2.5rem, 1.6rem + 3.8vw, 4.5rem);   /* ≈ 10.4vw at 390, 72 px at 1440 */
+  --text-display--line-height: .92;
+  --text-display--letter-spacing: -.05em;
+  --text-title: clamp(2rem, 1.4rem + 2.48vw, 4.5rem);
+  --text-title--line-height: .94;
+  --text-title--letter-spacing: -.048em;
+  --text-menu: clamp(2.3rem, 1.4rem + 4.2vw, 6rem);
+  --text-figure: clamp(3.25rem, 1.6rem + 5vw, 5.5rem);
+  --text-card: clamp(1.6rem, 1.3rem + .8vw, 2.1rem);
+  --text-card--letter-spacing: -.03em;
+  --text-lead: clamp(1.0625rem, .98rem + .3vw, 1.25rem);
+  --text-price: clamp(1.375rem, 1.3rem + .3vw, 1.5rem);
+  --text-body: clamp(1.0625rem, 1rem + .18vw, 1.1875rem);
+  --text-body--line-height: 1.42;
+  --text-small: .875rem;
+  --text-ui: .9375rem;
+  --font-weight-display: 800;
+  --font-weight-ui: 600;
+
+  /* spacing & shape */
+  --space-edge: .75rem;
+  --space-gutter: clamp(1rem, 5vw, 5rem);
+  --space-section: clamp(4.5rem, 9vw, 8.5rem);
+  --space-header: 4.25rem;
+  --size-button: 3.5rem;
+  --radius: 0;
+  --ease-out: cubic-bezier(.16, 1, .3, 1);
+  --mask-descender: .16em;            /* room under split-line masks so g/y/p/j are not clipped */
+
+  --texture-scratch: url("assets/scratches.png");
+  --texture-scratch-opacity: .55;
+  --texture-grain: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='220' height='220'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 .55 0'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>");
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: var(--color-ink-deep);
+  color: var(--color-paper);
+  font-family: var(--font-sans);
+  font-size: var(--text-body);
+  line-height: var(--text-body--line-height);
+  -webkit-font-smoothing: antialiased;
+}
+img { display: block; max-width: 100%; }
+a { color: inherit; }
+a[href^="tel:"] { white-space: nowrap; }
+button, input, select, textarea { font: inherit; color: inherit; }
+:focus-visible { outline: 2px solid var(--color-paper); outline-offset: 3px; }
+section[id], footer[id] { scroll-margin-top: var(--space-header); }
+[hidden] { display: none !important; }
+.sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+
+.display, .title {
+  margin: 0;
+  font-weight: var(--font-weight-display);
+  text-wrap: balance;
+  color: var(--color-paper);
+}
+.display { font-size: var(--text-display); line-height: var(--text-display--line-height); letter-spacing: var(--text-display--letter-spacing); }
+.title { font-size: var(--text-title); line-height: var(--text-title--line-height); letter-spacing: var(--text-title--letter-spacing); }
+
+/* ---------- buttons ---------- */
+.btn {
+  display: inline-flex; align-items: center; justify-content: center; gap: .75em;
+  min-height: var(--size-button);
+  padding: 0 1.75rem;
+  border: 1px solid var(--color-paper);
+  border-radius: var(--radius);
+  background: var(--color-paper);
+  color: var(--color-ink-deep);
+  font-size: var(--text-ui);
+  font-weight: var(--font-weight-ui);
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0;
+  cursor: pointer;
+  white-space: nowrap;
+}
+.btn::before { content: ""; width: .375em; height: .375em; background: currentColor; flex: none; }
+.btn:hover { background: var(--color-ink-deep); color: var(--color-paper); }
+.btn--ghost { background: transparent; color: var(--color-paper); }
+.btn--ghost:hover { background: var(--color-paper); color: var(--color-ink-deep); }
+.btn--block { width: 100%; }
+
+/* ---------- header ---------- */
+.header {
+  position: fixed; inset: 0 0 auto 0; z-index: 50;
+  display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; column-gap: 1.5rem;
+  padding: var(--space-edge) var(--space-edge) 0 1rem;
+  transition: background-color .3s, padding .3s;
+}
+.header.is-solid { background: var(--color-ink-deep); padding-bottom: var(--space-edge); }
+.wordmark {
+  font-weight: var(--font-weight-display);
+  font-size: 1.75rem;
+  letter-spacing: -.055em;
+  line-height: 1;
+  text-decoration: none;
+  justify-self: start;
+  white-space: nowrap;
+}
+.tags { display: flex; flex-wrap: nowrap; gap: .5rem; margin: 0; padding: 0; list-style: none; }
+.tags a {
+  display: inline-block;
+  background: var(--color-paper); color: var(--color-ink-deep);
+  font-size: var(--text-ui); font-weight: var(--font-weight-ui); text-transform: uppercase;
+  line-height: 1.2; padding: .1rem .2rem; text-decoration: none; white-space: nowrap;
+}
+.tags a:hover { background: var(--color-signal); color: var(--color-paper); }
+.header__actions { justify-self: end; display: flex; gap: .5rem; }
+.header__apply { min-width: 11.25rem; min-height: 3rem; transition: min-height .3s; }
+.header.is-solid .header__apply { min-height: 2.75rem; }
+.menu-btn { display: none; }
+
+@media (max-width: 1100px) {
+  .header__apply { min-width: 0; padding: 0 1.25rem; }
+}
+@media (max-width: 1023px) {
+  .header { grid-template-columns: 1fr auto; padding-left: .75rem; }
+  .header nav { display: none; }
+  .wordmark { font-size: 1.5rem; }
+  .header__apply { min-width: 0; padding: 0 1.1rem; min-height: 2.75rem; }
+  .menu-btn { display: inline-flex; min-height: 2.75rem; padding: 0 .9rem; }
+  .menu-btn::before { display: none; }
+}
+
+/* ---------- hero ---------- */
+.hero {
+  position: relative;
+  min-height: 100svh;
+  display: grid; align-items: end; justify-items: center;
+  overflow: hidden;
+  background: var(--color-ink);
+  isolation: isolate;
+}
+.hero__media { position: absolute; inset: 0; z-index: -2; overflow: hidden; }
+.hero__media img {
+  width: 100%; height: 100%; object-fit: cover; object-position: 80% 50%;
+  filter: saturate(.62) brightness(.66) contrast(1.06);
+}
+.hero__media::before { /* hue grade toward petrol */
+  content: ""; position: absolute; inset: 0; z-index: 1;
+  background: var(--color-tint); mix-blend-mode: color; opacity: .55;
+}
+.hero__media::after { /* readability: top for header, lower half for the headline */
+  content: ""; position: absolute; inset: 0; z-index: 2;
+  background:
+    linear-gradient(to bottom, color-mix(in srgb, var(--color-ink) 55%, transparent) 0%, color-mix(in srgb, var(--color-ink) 0%, transparent) 22%, color-mix(in srgb, var(--color-ink) 10%, transparent) 45%, color-mix(in srgb, var(--color-ink) 72%, transparent) 72%, color-mix(in srgb, var(--color-ink) 90%, transparent) 100%);
+}
+.hero__grain { position: absolute; inset: 0; z-index: -1; background-image: var(--texture-grain); opacity: .07; mix-blend-mode: overlay; pointer-events: none; }
+.hero__copy {
+  width: min(100% - 2rem, 60rem);
+  text-align: center;
+  padding-bottom: 1.25rem;
+}
+.hero__media picture { display: contents; }
+.hero__title .line-mask { display: block; overflow: hidden; padding-bottom: var(--mask-descender); margin-bottom: calc(var(--mask-descender) * -1); }
+.hero__title .line { display: block; }
+.hero__lead {
+  margin: .9rem auto 0; max-width: 46rem;
+  font-size: var(--text-lead); line-height: 1.35; color: var(--color-paper);
+}
+.hero__lead strong { display: block; margin-bottom: .2rem; font-size: var(--text-price); font-weight: var(--font-weight-ui); letter-spacing: -.01em; font-variant-numeric: tabular-nums; }
+.hero__cta { margin-top: 1.5rem; width: min(100%, 22rem); }
+.hero__alt { margin: .75rem auto 0; font-size: var(--text-small); color: var(--color-muted); }
+.hero__alt a { color: var(--color-paper); text-underline-offset: .2em; }
+
+@media (max-width: 600px) {
+  .hero__copy { width: calc(100% - 1.5rem); padding-bottom: 1.5rem; }
+  .hero__media img { object-position: 46% 50%; }
+  .hero__alt { margin-top: 1rem; }
+  .hero__cta { width: 100%; }
+}
+
+/* ---------- shared: texture panels, B&W photos ---------- */
+.textured { position: relative; isolation: isolate; }
+.textured::before, .textured::after {
+  content: ""; position: absolute; inset: 0; z-index: -1; pointer-events: none;
+}
+.textured::before { background-image: var(--texture-scratch); background-size: 1100px auto; opacity: var(--texture-scratch-opacity); }
+.textured::after { background-image: var(--texture-grain); background-size: 220px 220px; opacity: .06; }
+.textured--red { --texture-scratch-opacity: .42; }
+.bw { filter: grayscale(1) contrast(1.08) brightness(.92); }
+.section { padding: var(--space-section) var(--space-gutter); }
+.center { text-align: center; }
+.prose { color: var(--color-muted); max-width: 34rem; }
+.prose p { margin: 0 0 1em; }
+.prose p:last-child { margin-bottom: 0; }
+.prose strong { color: var(--color-paper); font-weight: var(--font-weight-ui); }
+
+/* ---------- facts ticker ---------- */
+.facts { background: var(--color-signal); color: var(--color-paper); overflow: hidden; }
+.facts__track { display: flex; width: max-content; animation: ticker 60s linear infinite; }
+.facts:hover .facts__track, .facts:focus-within .facts__track { animation-play-state: paused; }
+.facts__list { display: flex; align-items: center; gap: 5rem; margin: 0; padding: 0 2.5rem; list-style: none; height: 6rem; white-space: nowrap; font-size: var(--text-body); }
+.facts__list a { text-underline-offset: .22em; }
+@keyframes ticker { to { transform: translateX(-50%); } }
+@media (max-width: 760px) {
+  .facts__track { animation: none; width: auto; display: block; }
+  .facts__list { display: grid; gap: 1.1rem; height: auto; white-space: normal; text-align: center; padding: 3.5rem 1.5rem; font-size: 1.1875rem; line-height: 1.3; }
+  .facts__list[aria-hidden] { display: none; }
+}
+@media (prefers-reduced-motion: reduce) { .facts__track { animation: none; } }
+
+/* ---------- plans ---------- */
+.plans { background: var(--color-fog); padding: var(--space-section) var(--space-edge) var(--space-edge); color: var(--color-ink); }
+.plans .title { color: var(--color-ink); }
+.plans__head { text-align: center; padding: 0 var(--space-gutter) clamp(2.5rem, 5vw, 4.5rem); }
+.plans__head p { margin: 1.1rem auto 0; max-width: 36rem; font-size: var(--text-lead); line-height: 1.35; }
+.cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: .875rem; }
+.card {
+  --panel: var(--color-ink-deep);
+  position: relative; display: flex; flex-direction: column;
+  min-height: clamp(36rem, 46vw, 42rem);
+  background: var(--panel); color: var(--color-paper);
+}
+.card--signal { --panel: var(--color-signal); }
+.card__media { position: relative; height: 58%; flex: none; overflow: hidden; }
+.card__media { height: clamp(20rem, 26vw, 24.5rem); }
+.card__media img { width: 100%; height: 100%; object-fit: cover; }
+.card__media::after { content: ""; position: absolute; inset: 0; background: linear-gradient(to bottom, transparent 42%, var(--panel) 98%); }
+.card__body { display: flex; flex-direction: column; flex: 1; margin: 0 var(--space-edge); padding: 1.6rem 1.25rem 1.5rem; border-top: 1px solid var(--color-hairline); }
+.card__title { margin: 0; font-size: var(--text-card); font-weight: var(--font-weight-display); letter-spacing: var(--text-card--letter-spacing); line-height: 1.05; font-variant-numeric: tabular-nums; }
+.card__text { margin: .75rem 0 1.75rem; color: var(--color-muted); max-width: 30rem; }
+.card .btn { margin-top: auto; width: 100%; }
+.plans__note { margin: 0; padding: 1.5rem var(--space-gutter) calc(1.5rem - var(--space-edge)); text-align: center; font-size: var(--text-body); }
+@media (max-width: 900px) {
+  .cards { grid-template-columns: 1fr; }
+  .card { min-height: 0; text-align: center; }
+  .card__media { height: 18rem; }
+  .card__text { margin-inline: auto; }
+}
+
+/* ---------- requirements ---------- */
+.requirements { background: var(--color-ink-raised); text-align: center; }
+.requirements .title { max-width: 16ch; margin-inline: auto; }
+.requirements .prose { margin: 1.75rem auto 0; font-size: var(--text-lead); }
+.actions { display: flex; flex-wrap: wrap; gap: .75rem; justify-content: center; margin-top: 2.25rem; }
+.actions .btn { min-width: 16rem; }
+@media (max-width: 600px) { .actions .btn { width: 100%; } }
+
+/* ---------- split (included, apply) ---------- */
+.split { display: grid; grid-template-columns: 1fr 1fr; min-height: min(100vh, 58rem); }
+.split__panel {
+  background: var(--color-ink-stone);
+  display: grid; place-items: center; align-content: center; gap: 1.5rem;
+  padding: clamp(3rem, 7vw, 6rem) var(--space-gutter);
+}
+.split__text { background: var(--color-ink-deep); display: flex; flex-direction: column; justify-content: center; padding: var(--space-section) clamp(1.25rem, 6vw, 7rem); }
+.split__text .title { max-width: 12ch; }
+.split__text .prose { margin-top: clamp(1.75rem, 4vw, 3rem); }
+.frame { position: relative; width: clamp(15rem, 19vw, 17.5rem); aspect-ratio: 265 / 375; overflow: hidden; background: var(--color-ink-deep); }
+.frame[data-slider] { touch-action: pan-y; cursor: grab; user-select: none; -webkit-user-select: none; }
+.frame[data-slider] img { pointer-events: none; -webkit-user-drag: none; }
+.frame img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0; transition: opacity .7s ease; }
+.frame img.is-active { opacity: 1; }
+.slider__nav { display: flex; align-items: center; gap: 1.5rem; color: var(--color-muted); font-variant-numeric: tabular-nums; }
+.slider__nav button { width: 2.75rem; height: 2.75rem; display: grid; place-items: center; border: 0; background: none; cursor: pointer; color: var(--color-paper); }
+.slider__nav svg { width: 1rem; height: 1rem; }
+.slider__caption { margin: 0; font-size: clamp(1.25rem, 1rem + .7vw, 1.6rem); font-weight: var(--font-weight-ui); letter-spacing: -.02em; text-align: center; min-height: 2.6em; }
+@media (max-width: 900px) {
+  .split { grid-template-columns: 1fr; min-height: 0; }
+  .split__text { order: -1; padding-block: var(--space-section) 3.5rem; }
+  .split__text .title { max-width: none; }
+}
+
+/* ---------- calculator ---------- */
+.calc { position: relative; isolation: isolate; overflow: hidden; }
+.calc__bg { position: absolute; inset: 0; z-index: -1; }
+.calc__bg img { width: 100%; height: 100%; object-fit: cover; }
+.calc__bg::after { content: ""; position: absolute; inset: 0; background: var(--color-ink); opacity: .84; }
+.calc__head { text-align: center; max-width: 52rem; margin: 0 auto clamp(2.5rem, 5vw, 4.5rem); }
+.calc__head .prose { margin: 1.25rem auto 0; font-size: var(--text-lead); }
+.calc__grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0; max-width: 78rem; margin: 0 auto; }
+.calc__inputs { background: color-mix(in srgb, var(--color-ink-deep) 78%, transparent); padding: clamp(1.5rem, 3.5vw, 3rem); display: grid; gap: 1.75rem; align-content: start; }
+.calc__plan { display: flex; gap: .5rem; }
+.calc__plan button {
+  flex: 1; min-height: 3rem; border: 1px solid var(--color-paper); background: transparent; color: var(--color-paper);
+  font-size: var(--text-ui); font-weight: var(--font-weight-ui); text-transform: uppercase; cursor: pointer;
+}
+.calc__plan button[aria-pressed="true"] { background: var(--color-paper); color: var(--color-ink-deep); }
+.field-row { display: grid; gap: .6rem; }
+.field-row__top { display: flex; justify-content: space-between; align-items: baseline; gap: 1rem; }
+.field-row label { color: var(--color-paper); }
+.field-row output { font-weight: var(--font-weight-ui); font-variant-numeric: tabular-nums; white-space: nowrap; }
+input[type="range"] { -webkit-appearance: none; appearance: none; width: 100%; height: 2.25rem; background: transparent; margin: 0; cursor: pointer; }
+input[type="range"]::-webkit-slider-runnable-track { height: 2px; background: linear-gradient(to right, var(--color-paper) var(--fill, 50%), var(--color-hairline) var(--fill, 50%)); }
+input[type="range"]::-moz-range-track { height: 2px; background: var(--color-hairline); }
+input[type="range"]::-moz-range-progress { height: 2px; background: var(--color-paper); }
+input[type="range"]::-webkit-slider-thumb { -webkit-appearance: none; width: 1.25rem; height: 1.25rem; margin-top: calc(-.625rem + 1px); background: var(--color-paper); border: 0; border-radius: var(--radius); }
+input[type="range"]::-moz-range-thumb { width: 1.25rem; height: 1.25rem; background: var(--color-paper); border: 0; border-radius: var(--radius); }
+.calc__assume { margin: 0; font-size: var(--text-small); color: var(--color-muted); }
+.calc__result { background: var(--color-signal); padding: clamp(1.5rem, 3.5vw, 3rem); display: flex; flex-direction: column; }
+.calc__rows { margin: 0; display: grid; gap: .65rem; font-variant-numeric: tabular-nums; }
+.calc__rows div { display: flex; justify-content: space-between; gap: 1rem; padding-bottom: .65rem; border-bottom: 1px solid var(--color-hairline); }
+.calc__rows dt { color: var(--color-muted); }
+.calc__rows dd { margin: 0; font-weight: var(--font-weight-ui); }
+.calc__net { margin-top: auto; padding-top: 2.5rem; }
+.calc__net-label { margin: 0 0 .5rem; font-size: var(--text-lead); }
+.calc__net-value { display: block; font-size: var(--text-figure); font-weight: var(--font-weight-display); line-height: var(--text-display--line-height); letter-spacing: -.04em; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.calc__fine { margin: 1.25rem 0 0; font-size: var(--text-small); color: var(--color-muted); max-width: 30rem; }
+.calc__cta { margin-top: 1.5rem; width: 100%; }
+@media (max-width: 900px) { .calc__grid { grid-template-columns: 1fr; } .calc__net { padding-top: 2rem; } }
+
+/* ---------- how it works ---------- */
+.how { background: var(--color-ink); }
+.how .title { max-width: 18ch; margin: 0 auto; text-align: center; }
+.how__lead { text-align: center; margin: 1.25rem auto 0; color: var(--color-muted); font-size: var(--text-lead); max-width: 34rem; }
+.steps { list-style: none; margin: clamp(2.5rem, 5vw, 4.5rem) auto 0; padding: 0; max-width: 90rem; display: grid; grid-template-columns: repeat(4, 1fr); gap: 0; counter-reset: step; }
+.steps li { background: color-mix(in srgb, var(--color-ink-raised) 82%, transparent); padding: 1.6rem 1.6rem 2rem; min-height: 17rem; display: flex; flex-direction: column; border-right: 1px solid var(--color-hairline); }
+.steps li:last-child { border-right: 0; }
+.steps li::before { counter-increment: step; content: counter(step); font-size: var(--text-title); font-weight: var(--font-weight-display); letter-spacing: -.05em; line-height: 1; color: var(--color-paper); padding-bottom: 3.5rem; }
+.steps h3 { margin: 0 0 .6rem; font-size: clamp(1.25rem, 1.1rem + .4vw, 1.5rem); line-height: 1.12; letter-spacing: -.02em; font-weight: var(--font-weight-display); }
+.steps p { margin: 0; color: var(--color-muted); }
+@media (max-width: 1000px) { .steps { grid-template-columns: 1fr 1fr; } .steps li:nth-child(2) { border-right: 0; } .steps li:nth-child(-n+2) { border-bottom: 1px solid var(--color-hairline); } }
+@media (max-width: 600px) { .steps { grid-template-columns: 1fr; } .steps li { min-height: 0; border-right: 0; border-bottom: 1px solid var(--color-hairline); } .steps li::before { padding-bottom: 1.25rem; } }
+
+/* ---------- faq ---------- */
+.faq { background: var(--color-ink-raised); }
+.faq__grid { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); gap: clamp(2rem, 6vw, 7rem); max-width: 90rem; margin: 0 auto; }
+.faq__aside .prose { margin-top: 1.5rem; }
+.faq__aside .btn { margin-top: 2rem; }
+.faq__list { border-top: 1px solid var(--color-hairline); }
+.faq details { border-bottom: 1px solid var(--color-hairline); }
+.faq summary { list-style: none; cursor: pointer; display: flex; justify-content: space-between; align-items: center; gap: 1.5rem; padding: 1.35rem 0; font-size: clamp(1.125rem, 1rem + .35vw, 1.375rem); font-weight: var(--font-weight-ui); letter-spacing: -.01em; line-height: 1.25; }
+.faq summary::-webkit-details-marker { display: none; }
+.faq summary::after { content: ""; flex: none; width: 1rem; height: 1rem; background: linear-gradient(var(--color-paper), var(--color-paper)) center / 100% 2px no-repeat, linear-gradient(var(--color-paper), var(--color-paper)) center / 2px 100% no-repeat; transition: transform .25s var(--ease-out); }
+.faq details[open] summary::after { transform: rotate(45deg); }
+.faq details p { margin: 0 0 1.5rem; color: var(--color-muted); max-width: 40rem; }
+@media (max-width: 900px) { .faq__grid { grid-template-columns: 1fr; } }
+
+/* ---------- apply ---------- */
+.apply .split__text { justify-content: flex-start; }
+.apply .split__text .title { max-width: none; }
+.apply__intro { margin: 1.25rem 0 0; color: var(--color-muted); max-width: 32rem; }
+.progress { display: flex; align-items: center; gap: 1rem; margin: 2.25rem 0 1.75rem; font-size: var(--text-small); color: var(--color-muted); font-variant-numeric: tabular-nums; }
+.progress__bar { flex: 1; display: grid; grid-template-columns: repeat(3, 1fr); gap: 4px; max-width: 14rem; }
+.progress__bar span { height: 3px; background: var(--color-hairline); }
+.progress__bar span.is-done { background: var(--color-paper); }
+.form { max-width: 34rem; }
+.step { border: 0; margin: 0; padding: 0; display: grid; gap: 1.4rem; }
+.step[hidden] { display: none; }
+.step legend { padding: 0; margin-bottom: .25rem; font-size: clamp(1.25rem, 1.1rem + .4vw, 1.5rem); font-weight: var(--font-weight-display); letter-spacing: -.02em; }
+.field { display: grid; gap: .45rem; }
+.field > label, .field > .field__label { font-size: var(--text-small); color: var(--color-muted); }
+.input {
+  width: 100%; min-height: 3.25rem; padding: 0 1rem;
+  background: transparent; border: 1px solid var(--color-hairline); border-radius: var(--radius); color: var(--color-paper);
+}
+.input:focus { border-color: var(--color-paper); outline: none; }
+select.input { appearance: none; background-image: linear-gradient(45deg, transparent 50%, var(--color-paper) 50%), linear-gradient(135deg, var(--color-paper) 50%, transparent 50%); background-position: calc(100% - 1.3rem) 50%, calc(100% - .95rem) 50%; background-size: .35rem .35rem; background-repeat: no-repeat; }
+select.input option { background: var(--color-ink-deep); }
+input[type="date"].input { color-scheme: dark; }
+.choices { display: flex; flex-wrap: wrap; gap: .5rem; }
+.choice { position: relative; }
+.choice input { position: absolute; opacity: 0; inset: 0; cursor: pointer; }
+.choice span { display: inline-flex; align-items: center; min-height: 2.75rem; padding: 0 1rem; border: 1px solid var(--color-hairline); font-size: var(--text-ui); font-weight: var(--font-weight-ui); text-transform: uppercase; }
+.choice input:checked + span { background: var(--color-paper); color: var(--color-ink-deep); border-color: var(--color-paper); }
+.choice input:focus-visible + span { outline: 2px solid var(--color-paper); outline-offset: 2px; }
+.field__error { margin: 0; font-size: var(--text-small); color: var(--color-paper); background: var(--color-signal); padding: .35rem .6rem; justify-self: start; }
+.field__error[hidden] { display: none; }
+.check { display: flex; gap: .75rem; align-items: flex-start; font-size: var(--text-small); color: var(--color-muted); }
+.check input { width: 1.25rem; height: 1.25rem; margin-top: .1rem; accent-color: var(--color-paper); flex: none; }
+.form__nav { display: flex; gap: .75rem; margin-top: 2rem; }
+.form__nav .btn { flex: 1; }
+.form__alt { margin: 1.25rem 0 0; font-size: var(--text-small); color: var(--color-muted); }
+.form__alt a { color: var(--color-paper); text-underline-offset: .2em; }
+.success { max-width: 32rem; margin-top: 2.5rem; padding-top: 1.75rem; border-top: 1px solid var(--color-hairline); }
+.success[hidden] { display: none; }
+.success h3 { margin: 0 0 .75rem; font-size: var(--text-card); letter-spacing: var(--text-card--letter-spacing); }
+.success p { margin: 0; color: var(--color-muted); }
+@media (max-width: 900px) { .apply .split__panel { display: none; } }
+
+/* ---------- footer & menu (red poster panel) ---------- */
+.poster { background: var(--color-signal); color: var(--color-paper); display: grid; grid-template-rows: auto 1fr auto; min-height: 100svh; padding: var(--space-edge) var(--space-edge) 1.25rem 1rem; }
+.poster__top { display: flex; justify-content: space-between; align-items: start; }
+.poster__links { list-style: none; margin: 0; padding: 4rem 0; display: grid; place-content: center; text-align: center; gap: .1em; }
+.poster__links a { font-size: var(--text-menu); font-weight: var(--font-weight-display); letter-spacing: -.05em; line-height: 1.02; text-decoration: none; }
+.poster__links a:hover { text-decoration: underline; text-decoration-thickness: .06em; text-underline-offset: .1em; }
+.poster__bottom { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: end; gap: 2rem; }
+.legal { margin: 0; padding: 0; list-style: none; display: grid; gap: .3rem; font-size: var(--text-ui); font-weight: var(--font-weight-ui); text-transform: uppercase; line-height: 1.3; }
+.legal a { text-decoration: none; }
+.legal a:hover { text-decoration: underline; }
+.legal--right { text-align: right; }
+@media (max-width: 700px) { .legal--right { text-align: left; } .poster__links { padding: 3rem 0; } }
+
+.menu { position: fixed; inset: 0; z-index: 80; clip-path: inset(0 0 100% 0); visibility: hidden; overflow-y: auto; }
+.menu.is-open { clip-path: inset(0 0 0 0); visibility: visible; }
+.menu__close::before { display: none; }
+
+/* ---------- chat + sticky bar ---------- */
+.chat { position: fixed; right: var(--space-edge); bottom: var(--space-edge); z-index: 60; display: grid; justify-items: end; gap: .5rem; }
+.chat__toggle { width: 4rem; height: 4rem; display: grid; place-items: center; border: 1px solid var(--color-paper); background: var(--color-paper); color: var(--color-ink-deep); cursor: pointer; }
+.chat__toggle:hover, .chat__toggle[aria-expanded="true"] { background: var(--color-ink-deep); color: var(--color-paper); }
+.chat__toggle svg { width: 1.6rem; height: 1.6rem; }
+.chat__panel { background: var(--color-ink-deep); border: 1px solid var(--color-hairline); padding: .75rem; display: grid; gap: .5rem; width: 16rem; }
+.chat__panel[hidden] { display: none; }
+.chat__panel p { margin: .25rem .25rem .5rem; font-size: var(--text-small); color: var(--color-muted); }
+.chat__panel .btn { width: 100%; justify-content: flex-start; }
+.stickybar { display: none; }
+@media (max-width: 760px) {
+  .chat { bottom: calc(var(--space-edge) + env(safe-area-inset-bottom)); transform: translateY(calc(100% + 2rem)); transition: transform .35s var(--ease-out); }
+  .stickybar {
+    display: block; position: fixed; left: 0; right: 0; bottom: 0; z-index: 55;
+    padding: var(--space-edge) calc(4rem + var(--space-edge) * 2) calc(var(--space-edge) + env(safe-area-inset-bottom)) var(--space-edge);
+    background: var(--color-ink-deep); border-top: 1px solid var(--color-hairline);
+    transform: translateY(100%); transition: transform .35s var(--ease-out);
+  }
+  .stickybar .btn { width: 100%; min-height: 4rem; }
+  body.show-bar .stickybar, body.show-bar .chat { transform: none; }
+  body.show-bar .poster { padding-bottom: calc(1.25rem + 5.5rem); }
+}
+</style>
+</head>
+<body>
+
+<header class="header" id="top" data-section="header">
+  <a class="wordmark" href="#top" aria-label="PCX Kurýr, back to top">PCX Kurýr</a>
+  <nav aria-label="Main">
+    <ul class="tags">
+      <li><a href="#plans">Plans</a></li>
+      <li><a href="#requirements">Licence</a></li>
+      <li><a href="#included">Included</a></li>
+      <li><a href="#calculator">Calculator</a></li>
+      <li><a href="#how">How it works</a></li>
+      <li><a href="#faq">FAQ</a></li>
+    </ul>
+  </nav>
+  <div class="header__actions">
+    <a class="btn btn--ghost header__apply" href="#apply">Apply</a>
+    <button class="btn menu-btn" type="button" aria-expanded="false" aria-controls="menu">Menu</button>
+  </div>
+</header>
+
+<main>
+<section class="hero" id="hero" data-section="hero">
+  <div class="hero__media">
+    <picture>
+      <source media="(max-width: 600px)" srcset="images/hero-pcx-mobile-2.jpg" width="1536" height="2752">
+      <img src="images/hero-pcx-2.jpg" alt="A courier on a red Honda PCX with a delivery box rides over wet cobblestones in Prague at night" width="2752" height="1536" fetchpriority="high" data-todo="hero-photo">
+    </picture>
+  </div>
+  <div class="hero__grain" aria-hidden="true"></div>
+  <div class="hero__copy">
+    <h1 class="display hero__title"><span class="line-mask"><span class="line">Deliver on a Honda&nbsp;PCX.</span></span> <span class="line-mask"><span class="line">Pay by the week.</span></span></h1>
+    <p class="hero__lead" data-hero-fade><strong data-todo="price-week">1 490 Kč a week</strong> Service, insurance, box mount and a replacement scooter included.</p>
+    <a class="btn hero__cta" href="#apply" data-hero-fade>Apply in 2 minutes</a>
+    <p class="hero__alt" data-hero-fade>Apply today, ride <span data-todo="start-time">tomorrow</span>. Or <a href="#apply" data-todo="whatsapp-number">message us on WhatsApp</a>, we reply within 2&nbsp;hours.</p>
+  </div>
+</section>
+
+<section class="facts" id="facts" data-section="facts" aria-label="Key facts">
+  <div class="facts__track">
+    <ul class="facts__list">
+      <li data-todo="price-week">Honda PCX 125, 1 490 Kč a week</li>
+      <li>Replacement scooter if yours breaks down</li>
+      <li>Box mount, phone holder and USB already fitted</li>
+      <li>Licence? <a href="#apply" data-todo="whatsapp-number">Send a photo</a>, we'll confirm in chat</li>
+      <li>Pick up in Prague, ride <span data-todo="start-time">the next day</span></li>
+    </ul>
+    <ul class="facts__list" aria-hidden="true">
+      <li>Honda PCX 125, 1 490 Kč a week</li>
+      <li>Replacement scooter if yours breaks down</li>
+      <li>Box mount, phone holder and USB already fitted</li>
+      <li>Licence? <a href="#apply" tabindex="-1">Send a photo</a>, we'll confirm in chat</li>
+      <li>Pick up in Prague, ride the next day</li>
+    </ul>
+  </div>
+</section>
+
+<section class="plans" id="plans" data-section="plans">
+  <div class="plans__head">
+    <h2 class="title" data-reveal>Pick your plan</h2>
+    <p>Same scooter, same setup. Pay by the week while you try it, or by the month when you ride every week.</p>
+  </div>
+  <div class="cards">
+    <article class="card">
+      <div class="card__media"><img class="bw" src="images/scooter-cobblestone-2.jpg" alt="Red maxi-scooter with a delivery box parked on a cobbled street at night" width="1792" height="2400" loading="lazy"></div>
+      <div class="card__body">
+        <h3 class="card__title" data-todo="price-week">1 490 Kč a week</h3>
+        <p class="card__text">Pay week by week. Good for your first weeks of delivery or a busy season.</p>
+        <a class="btn" href="#apply" data-plan="week">Apply for a week</a>
+      </div>
+    </article>
+    <article class="card card--signal">
+      <div class="card__media"><img class="bw" src="images/scooter-cobblestone-1.jpg" alt="Red maxi-scooter with a top box on wet cobblestones between old houses" width="1792" height="2400" loading="lazy"></div>
+      <div class="card__body">
+        <h3 class="card__title" data-todo="price-month">4 990 Kč a month</h3>
+        <p class="card__text">About 1 150 Kč a week. For couriers who ride every week and want the lower price.</p>
+        <a class="btn" href="#apply" data-plan="month">Apply for a month</a>
+      </div>
+    </article>
+    <article class="card">
+      <div class="card__media"><img class="bw" src="images/courier-portrait-1.jpg" alt="Courier in a helmet and rain jacket standing on a cobbled street at night" width="1792" height="2400" loading="lazy" style="object-position: 50% 20%"></div>
+      <div class="card__body">
+        <h3 class="card__title">Not sure yet?</h3>
+        <p class="card__text">Ask about your licence, the deposit or the pickup time in WhatsApp or Telegram before you apply.</p>
+        <a class="btn btn--ghost" href="#apply" data-todo="whatsapp-number">Message us</a>
+      </div>
+    </article>
+  </div>
+  <p class="plans__note" data-todo="included">Both plans include service, insurance, a replacement scooter, box mount, phone holder, USB charging, helmet and gloves. Fuel is yours.</p>
+</section>
+
+<section class="requirements section" id="requirements" data-section="requirements">
+  <h2 class="title" data-reveal>Not sure your licence counts? Send us a photo.</h2>
+  <div class="prose">
+    <p>Send a photo of your licence, we'll confirm in chat. You'll know before you fill anything in, and we'll tell you in the same chat what to bring to the pickup.</p>
+  </div>
+  <div class="actions">
+    <a class="btn" href="#apply" data-todo="whatsapp-number">Send it on WhatsApp</a>
+    <a class="btn btn--ghost" href="#apply" data-todo="telegram-handle">Send it on Telegram</a>
+  </div>
+</section>
+
+<section class="split included" id="included" data-section="included">
+  <div class="split__panel textured">
+    <div class="frame" data-slider>
+      <img class="bw is-active" src="images/delivery-box-1.jpg" alt="Black delivery box mounted on the rear rack of a red scooter" width="2048" height="2048" loading="lazy" style="object-position: 40% 50%">
+      <img class="bw" src="images/phone-holder-1.jpg" alt="Phone in a handlebar holder with a USB cable" width="2048" height="2048" loading="lazy" style="object-position: 52% 50%">
+      <img class="bw" src="assets/slide-helmet.jpg" alt="Courier in a full-face helmet and gloves riding a Honda PCX" width="700" height="990" loading="lazy" data-todo="photo-helmet">
+    </div>
+    <div class="slider__nav">
+      <button type="button" data-slide="-1" aria-label="Previous photo"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M10.5 2 4.5 8l6 6"/></svg></button>
+      <span aria-live="polite"><span data-slide-index>1</span> / 3</span>
+      <button type="button" data-slide="1" aria-label="Next photo"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6"><path d="m5.5 2 6 6-6 6"/></svg></button>
+    </div>
+    <p class="slider__caption" data-slide-caption>Box mount on the rear rack</p>
+  </div>
+  <div class="split__text">
+    <h2 class="title" data-reveal>Ready for shifts the day you pick it up</h2>
+    <div class="prose">
+      <p>Every PCX 125 comes with a box mount on the rear rack, a phone holder on the bars and USB charging, so your phone lasts the whole shift. Helmet and gloves come with it.</p>
+      <p><strong data-todo="replacement">If the scooter breaks down, we bring you a replacement.</strong> A breakdown shouldn't cost you shifts. Service and repairs are part of the weekly price, and so is insurance.</p>
+    </div>
+  </div>
+</section>
+
+<section class="calc section" id="calculator" data-section="calculator">
+  <div class="calc__bg"><img class="bw" src="images/tram-rails-night-1.jpg" alt="" width="2752" height="1536" loading="lazy"></div>
+  <div class="calc__head">
+    <h2 class="title" data-reveal>What's left after rent and fuel</h2>
+    <div class="prose"><p>Put in your own numbers. The result updates as you move the sliders.</p></div>
+  </div>
+  <div class="calc__grid">
+    <form class="calc__inputs" id="calc-form" onsubmit="return false" data-todo="calculator-defaults">
+      <div class="calc__plan" role="group" aria-label="Plan">
+        <button type="button" aria-pressed="true" data-calc-plan="week">Week plan</button>
+        <button type="button" aria-pressed="false" data-calc-plan="month">Month plan</button>
+      </div>
+      <div class="field-row">
+        <div class="field-row__top"><label for="c-hours">Hours you ride a week</label><output for="c-hours" data-out="hours">30 h</output></div>
+        <input type="range" id="c-hours" name="hours" min="5" max="70" step="1" value="30">
+      </div>
+      <div class="field-row">
+        <div class="field-row__top"><label for="c-rate">Your average earnings per hour</label><output for="c-rate" data-out="rate">200 Kč</output></div>
+        <input type="range" id="c-rate" name="rate" min="100" max="400" step="5" value="200">
+      </div>
+      <div class="field-row">
+        <div class="field-row__top"><label for="c-km">Kilometres per hour on shift</label><output for="c-km" data-out="km">12 km</output></div>
+        <input type="range" id="c-km" name="km" min="4" max="30" step="1" value="12">
+      </div>
+      <div class="field-row">
+        <div class="field-row__top"><label for="c-fuel">Fuel price per litre</label><output for="c-fuel" data-out="fuel">38 Kč</output></div>
+        <input type="range" id="c-fuel" name="fuel" min="30" max="50" step="0.5" value="38">
+      </div>
+      <p class="calc__assume" data-todo="pcx-consumption">We assume the PCX uses 2.3 l per 100 km.</p>
+    </form>
+    <div class="calc__result" aria-live="polite">
+      <dl class="calc__rows">
+        <div><dt>You earn</dt><dd data-res="gross">6 000 Kč</dd></div>
+        <div><dt data-rent-label>Rent</dt><dd data-res="rent">−1 490 Kč</dd></div>
+        <div><dt>Fuel</dt><dd data-res="fuelcost">−315 Kč</dd></div>
+      </dl>
+      <div class="calc__net">
+        <p class="calc__net-label">Left for you, per week</p>
+        <strong class="calc__net-value" data-res="net">4 195 Kč</strong>
+        <p class="calc__fine">An estimate from the numbers you entered, not a promise of income. Your earnings depend on your platform, hours and city.</p>
+        <a class="btn calc__cta" href="#apply" data-plan-from-calc>Apply in 2 minutes</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="how section textured" id="how" data-section="how">
+  <h2 class="title" data-reveal>From first message to first shift</h2>
+  <p class="how__lead" data-todo="start-time">Apply today, pick up the scooter the next day.</p>
+  <ol class="steps">
+    <li><h3>Apply in 2 minutes</h3><p>Pick a plan and a start date, leave your phone number. No documents needed yet.</p></li>
+    <li><h3>Send your licence photo</h3><p>In WhatsApp or Telegram. We confirm in chat and agree the pickup time.</p></li>
+    <li><h3>Pick up in Prague</h3><p>We go through the scooter with you, you sign the contract and pay the first week or month.</p></li>
+    <li><h3>Ride your first shift</h3><p>Box, phone holder and USB are already on. Log in to your app and go.</p></li>
+  </ol>
+</section>
+
+<section class="faq section" id="faq" data-section="faq">
+  <div class="faq__grid">
+    <div class="faq__aside">
+      <h2 class="title" data-reveal>Questions couriers ask</h2>
+      <div class="prose"><p>Something not here? Ask in chat, we'll answer before you apply.</p></div>
+      <a class="btn btn--ghost" href="#apply" data-todo="whatsapp-number">Ask on WhatsApp</a>
+    </div>
+    <div class="faq__list" data-todo="faq-answers">
+      <details><summary>What happens if the scooter breaks down?</summary><p>Message us where you are. We bring a replacement scooter, so you don't lose the shift. Service and repairs from normal wear are included.</p></details>
+      <details><summary>What if I have an accident?</summary><p>First make sure you and others are safe, then take photos and message us straight away. We'll take you through the insurance steps.</p></details>
+      <details><summary>What insurance is included?</summary><p>Every scooter is insured. We send you a summary of the cover in chat before you sign, so you know what is and isn't covered.</p></details>
+      <details><summary>Is there a deposit? What about damage?</summary><p>There is a deposit, paid at pickup and returned when you bring the scooter back in the same condition. We tell you the amount in chat before you apply.</p></details>
+      <details><summary>How do I pay?</summary><p>In advance, for the week or the month. We'll agree card or bank transfer at pickup.</p></details>
+      <details><summary>Can I extend or stop early?</summary><p>Extend by message before your period ends. If you need to stop early, tell us in chat and we'll explain the terms before you sign.</p></details>
+      <details><summary>Who pays for fuel?</summary><p>You do. Use the calculator above to see what fuel costs you per week.</p></details>
+      <details><summary>Can I use the scooter outside shifts?</summary><p>Yes, it's yours for the whole rental period, on and off shift.</p></details>
+      <details><summary>Which platforms can I work for?</summary><p>Any: Wolt, Bolt Food, foodora or others. The rent is a flat price, nothing is taken from your earnings.</p></details>
+    </div>
+  </div>
+</section>
+
+<section class="split apply" id="apply" data-section="apply">
+  <div class="split__panel textured">
+    <div class="frame"><img class="bw is-active" src="assets/apply-portrait.jpg" alt="Courier in an open-face helmet and rain jacket with a delivery backpack, on a cobbled street at night" width="700" height="937" loading="lazy" style="object-position: 50% 30%" data-todo="photo-courier"></div>
+    <p class="slider__caption">Questions first? <a href="#apply" data-todo="whatsapp-number">Message us</a></p>
+  </div>
+  <div class="split__text">
+    <h2 class="title" data-reveal>Apply in 2 minutes</h2>
+    <p class="apply__intro">Three short steps. We reply within 2 hours, 9:00–19:00.</p>
+    <div class="progress" aria-hidden="true"><span data-progress-label>Step 1 of 3</span><div class="progress__bar"><span class="is-done"></span><span></span><span></span></div></div>
+    <form class="form" id="apply-form" novalidate>
+      <fieldset class="step" data-step="1">
+        <legend>Plan and start</legend>
+        <div class="field">
+          <span class="field__label" id="lbl-plan">Plan</span>
+          <div class="choices" role="radiogroup" aria-labelledby="lbl-plan" data-todo="price-week price-month">
+            <label class="choice"><input type="radio" name="plan" value="week" checked><span>Week, 1 490 Kč</span></label>
+            <label class="choice"><input type="radio" name="plan" value="month"><span>Month, 4 990 Kč</span></label>
+          </div>
+        </div>
+        <div class="field">
+          <label for="f-start">When do you want to start?</label>
+          <input class="input" type="date" id="f-start" name="start" required>
+          <p class="field__error" hidden>Pick a start date. It can be tomorrow.</p>
+        </div>
+        <div class="field">
+          <label for="f-licence">Your driving licence</label>
+          <select class="input" id="f-licence" name="licence" required>
+            <option value="">Choose one</option>
+            <option>Car licence (B)</option>
+            <option>Motorcycle licence (A1, A2 or A)</option>
+            <option>Licence from outside the EU</option>
+            <option>Not sure</option>
+          </select>
+          <p class="field__error" hidden>Choose your licence. "Not sure" is fine, we'll check in chat.</p>
+        </div>
+      </fieldset>
+      <fieldset class="step" data-step="2" hidden>
+        <legend>How we reach you</legend>
+        <div class="field">
+          <label for="f-name">Your name</label>
+          <input class="input" type="text" id="f-name" name="name" autocomplete="name" required>
+          <p class="field__error" hidden>Tell us your name so we know who we're writing to.</p>
+        </div>
+        <div class="field">
+          <label for="f-phone">Phone number</label>
+          <input class="input" type="tel" id="f-phone" name="phone" autocomplete="tel" inputmode="tel" placeholder="+420 000 000 000" required>
+          <p class="field__error" hidden>Enter a phone number with the country code, for example +420 000 000 000.</p>
+        </div>
+        <div class="field">
+          <span class="field__label" id="lbl-msg">Where should we write?</span>
+          <div class="choices" role="radiogroup" aria-labelledby="lbl-msg">
+            <label class="choice"><input type="radio" name="messenger" value="whatsapp" checked><span>WhatsApp</span></label>
+            <label class="choice"><input type="radio" name="messenger" value="telegram"><span>Telegram</span></label>
+            <label class="choice"><input type="radio" name="messenger" value="call"><span>Call me</span></label>
+          </div>
+        </div>
+        <div class="field">
+          <label for="f-lang">Language</label>
+          <select class="input" id="f-lang" name="language">
+            <option>English</option><option>Čeština</option><option>Українська</option><option>Русский</option>
+          </select>
+        </div>
+        <div class="field">
+          <span class="field__label" id="lbl-plat">Platforms you work for (optional)</span>
+          <div class="choices" role="group" aria-labelledby="lbl-plat">
+            <label class="choice"><input type="checkbox" name="platform" value="wolt"><span>Wolt</span></label>
+            <label class="choice"><input type="checkbox" name="platform" value="bolt"><span>Bolt Food</span></label>
+            <label class="choice"><input type="checkbox" name="platform" value="foodora"><span>foodora</span></label>
+            <label class="choice"><input type="checkbox" name="platform" value="other"><span>Other</span></label>
+          </div>
+        </div>
+      </fieldset>
+      <fieldset class="step" data-step="3" hidden>
+        <legend>Licence photos and consent</legend>
+        <div class="field">
+          <label for="f-front">Licence, front (optional)</label>
+          <input class="input" type="file" id="f-front" name="front" accept="image/*" style="padding-top:.8rem">
+        </div>
+        <div class="field">
+          <label for="f-back">Licence, back (optional)</label>
+          <input class="input" type="file" id="f-back" name="back" accept="image/*" style="padding-top:.8rem">
+        </div>
+        <p class="calc__assume">Or send them later in chat. Photos go straight to us and are not stored on the website.</p>
+        <label class="check"><input type="checkbox" name="consent" id="f-consent" required><span>I agree that PCX Kurýr uses my name, phone and licence details to process this application. <a href="#footer">Privacy</a></span></label>
+        <p class="field__error" hidden>Tick the box so we can use your details for the application.</p>
+      </fieldset>
+      <div class="form__nav">
+        <button class="btn btn--ghost" type="button" data-back hidden>Back</button>
+        <button class="btn" type="submit" data-next>Next</button>
+      </div>
+      <p class="form__alt">Prefer to talk? <a href="#apply" data-todo="whatsapp-number">WhatsApp</a>, <a href="#apply" data-todo="telegram-handle">Telegram</a> or <a href="#apply" data-todo="phone">+420 000 000 000</a></p>
+    </form>
+    <div class="success" id="apply-success" hidden tabindex="-1">
+      <h3>Application sent</h3>
+      <p>We'll message you on <span data-success-channel>WhatsApp</span> within 2 hours, 9:00–19:00. Have your licence at hand, we'll ask for a photo if you didn't add one.</p>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="poster textured textured--red" id="footer" data-section="footer">
+  <div class="poster__top">
+    <a class="wordmark" href="#top">PCX Kurýr</a>
+    <a class="btn btn--ghost header__apply" href="#apply">Apply</a>
+  </div>
+  <ul class="poster__links">
+    <li><a href="#plans">Plans and prices</a></li>
+    <li><a href="#included">What's included</a></li>
+    <li><a href="#calculator">Earnings calculator</a></li>
+    <li><a href="#how">How it works</a></li>
+    <li><a href="#faq">Questions</a></li>
+    <li><a href="#apply">Apply</a></li>
+  </ul>
+  <div class="poster__bottom">
+    <ul class="legal" data-todo="contacts">
+      <li><a href="#apply">+420 000 000 000</a></li>
+      <li><a href="#apply">WhatsApp</a> &nbsp; <a href="#apply">Telegram</a></li>
+      <li>Pickup in Prague, daily 9:00–19:00</li>
+      <li><a href="#footer">Rental terms</a> &nbsp; <a href="#footer">Privacy</a></li>
+    </ul>
+    <ul class="legal legal--right">
+      <li><a href="#top" aria-current="true">English</a></li>
+      <li><a href="#top" lang="cs">Čeština</a></li>
+      <li><a href="#top" lang="uk">Українська</a></li>
+      <li><a href="#top" lang="ru">Русский</a></li>
+    </ul>
+  </div>
+</footer>
+
+<div class="menu poster textured textured--red" id="menu" role="dialog" aria-modal="true" aria-label="Menu">
+  <div class="poster__top">
+    <a class="wordmark" href="#top" data-close>PCX Kurýr</a>
+    <button class="btn menu__close" type="button" data-close>Close</button>
+  </div>
+  <ul class="poster__links">
+    <li><a href="#plans" data-close>Plans and prices</a></li>
+    <li><a href="#included" data-close>What's included</a></li>
+    <li><a href="#calculator" data-close>Earnings calculator</a></li>
+    <li><a href="#how" data-close>How it works</a></li>
+    <li><a href="#faq" data-close>Questions</a></li>
+    <li><a href="#apply" data-close>Apply</a></li>
+  </ul>
+  <div class="poster__bottom">
+    <ul class="legal">
+      <li><a href="#apply">+420 000 000 000</a></li>
+      <li><a href="#apply">WhatsApp</a> &nbsp; <a href="#apply">Telegram</a></li>
+      <li>Daily 9:00–19:00</li>
+    </ul>
+    <ul class="legal legal--right"><li>English</li><li lang="cs">Čeština</li><li lang="uk">Українська</li><li lang="ru">Русский</li></ul>
+  </div>
+</div>
+
+<div class="stickybar" inert>
+  <a class="btn" href="#apply">Apply in 2 minutes</a>
+</div>
+
+<div class="chat">
+  <div class="chat__panel" id="chat-panel" hidden>
+    <p>We reply within 2 hours, 9:00–19:00.</p>
+    <a class="btn" href="#apply" data-todo="whatsapp-number">WhatsApp</a>
+    <a class="btn" href="#apply" data-todo="telegram-handle">Telegram</a>
+    <a class="btn btn--ghost" href="#apply" data-todo="phone">Call +420 000 000 000</a>
+  </div>
+  <button class="chat__toggle" type="button" aria-expanded="false" aria-controls="chat-panel" aria-label="Message us">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="miter"><path d="M3 4h18v12H9l-5 4v-4H3z"/></svg>
+  </button>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/SplitText.min.js"></script>
+<script>
+/* Placeholder data — every value marked todo needs owner confirmation (see NOTES.md). */
+const SITE = {
+  plans: {
+    week:  { price: 1490, period: "week",  todo: "price-week" },
+    month: { price: 4990, period: "month", todo: "price-month" }
+  },
+  calculator: {
+    defaults: { hours: 30, rate: 200, km: 12, fuel: 38 },  // todo: sample defaults, not platform data
+    consumptionLper100km: 2.3,                              // todo: confirm PCX 125 figure before calling it official
+    todo: "calculator-defaults"
+  },
+  contacts: { phone: "+420 000 000 000", whatsapp: "420000000000", telegram: "pcxkuryr", hours: "9:00–19:00", replyWithin: "2 hours", todo: "contacts" },
+  startTime: { text: "next day", todo: "start-time" }
+};
+
+const fmt = new Intl.NumberFormat("cs-CZ", { maximumFractionDigits: 0 });
+const kc = (n) => fmt.format(Math.round(n)).replace(/ /g, " ") + " Kč";
+const motionOK = window.matchMedia("(prefers-reduced-motion: no-preference)").matches;
+const hasGsap = typeof window.gsap !== "undefined";
+
+/* ---------- header ---------- */
+const header = document.querySelector(".header");
+const onScroll = () => header.classList.toggle("is-solid", window.scrollY > 40);
+window.addEventListener("scroll", onScroll, { passive: true }); onScroll();
+
+/* ---------- menu ---------- */
+const menu = document.getElementById("menu");
+const menuBtn = document.querySelector(".menu-btn");
+function openMenu() {
+  menu.classList.add("is-open"); menuBtn.setAttribute("aria-expanded", "true");
+  document.body.style.overflow = "hidden";
+  if (hasGsap && motionOK) {
+    gsap.fromTo(menu, { clipPath: "inset(0 0 100% 0)" }, { clipPath: "inset(0 0 0% 0)", duration: .55, ease: "power3.inOut" });
+    gsap.from(menu.querySelectorAll(".poster__links li"), { yPercent: 60, opacity: 0, duration: .6, ease: "expo.out", stagger: .05, delay: .25 });
+  }
+  menu.querySelector(".menu__close").focus();
+}
+function closeMenu() {
+  menu.classList.remove("is-open"); menuBtn.setAttribute("aria-expanded", "false");
+  document.body.style.overflow = ""; menuBtn.focus({ preventScroll: true });
+}
+menuBtn.addEventListener("click", openMenu);
+menu.querySelectorAll("[data-close]").forEach((el) => el.addEventListener("click", closeMenu));
+document.addEventListener("keydown", (e) => {
+  if (e.key === "Escape" && menu.classList.contains("is-open")) closeMenu();
+  if (e.key === "Tab" && menu.classList.contains("is-open")) {
+    const f = [...menu.querySelectorAll("a, button")]; const first = f[0], last = f[f.length - 1];
+    if (e.shiftKey && document.activeElement === first) { e.preventDefault(); last.focus(); }
+    else if (!e.shiftKey && document.activeElement === last) { e.preventDefault(); first.focus(); }
+  }
+});
+
+/* ---------- chat ---------- */
+const chatBtn = document.querySelector(".chat__toggle"), chatPanel = document.getElementById("chat-panel");
+chatBtn.addEventListener("click", () => {
+  const open = chatPanel.hidden; chatPanel.hidden = !open; chatBtn.setAttribute("aria-expanded", String(open));
+});
+document.addEventListener("keydown", (e) => { if (e.key === "Escape" && !chatPanel.hidden) { chatPanel.hidden = true; chatBtn.setAttribute("aria-expanded", "false"); chatBtn.focus(); } });
+
+/* ---------- sticky mobile bar: only when hero CTA and form are out of view ---------- */
+const heroCta = document.querySelector(".hero__cta"), applySec = document.getElementById("apply");
+const stickyBar = document.querySelector(".stickybar");
+let barTick = false;
+function updateBar() {
+  barTick = false;
+  const pastHero = heroCta.getBoundingClientRect().bottom < 0;
+  const r = applySec.getBoundingClientRect();
+  const inApply = r.top < innerHeight * .85 && r.bottom > innerHeight * .15;
+  const show = pastHero && !inApply;
+  document.body.classList.toggle("show-bar", show);
+  stickyBar.inert = !show;
+}
+window.addEventListener("scroll", () => { if (!barTick) { barTick = true; requestAnimationFrame(updateBar); } }, { passive: true });
+updateBar();
+
+/* ---------- included slider ---------- */
+const slides = [...document.querySelectorAll("[data-slider] img")];
+const captions = ["Box mount on the rear rack", "Phone holder with USB charging", "Helmet and gloves"];
+let slide = 0;
+function stepSlide(dir) {
+  slide = (slide + dir + slides.length) % slides.length;
+  slides.forEach((img, i) => img.classList.toggle("is-active", i === slide));
+  document.querySelector("[data-slide-index]").textContent = slide + 1;
+  document.querySelector("[data-slide-caption]").textContent = captions[slide];
+}
+document.querySelectorAll("[data-slide]").forEach((b) => b.addEventListener("click", () => stepSlide(Number(b.dataset.slide))));
+const sliderFrame = document.querySelector("[data-slider]");
+let swipeX = null;
+sliderFrame.addEventListener("pointerdown", (e) => { swipeX = e.clientX; });
+sliderFrame.addEventListener("pointerup", (e) => {
+  if (swipeX === null) return;
+  const dx = e.clientX - swipeX; swipeX = null;
+  if (Math.abs(dx) > 40) stepSlide(dx < 0 ? 1 : -1);
+});
+sliderFrame.addEventListener("pointercancel", () => { swipeX = null; });
+
+/* ---------- calculator ---------- */
+const calcForm = document.getElementById("calc-form");
+let calcPlan = "week";
+const shown = { gross: 0, rent: 0, fuelcost: 0, net: 0 };
+const resEl = (k) => document.querySelector(`[data-res="${k}"]`);
+function writeRes(vals) {
+  resEl("gross").textContent = kc(vals.gross);
+  resEl("rent").textContent = "−" + kc(vals.rent);
+  resEl("fuelcost").textContent = "−" + kc(vals.fuelcost);
+  resEl("net").textContent = (vals.net < 0 ? "−" : "") + kc(Math.abs(vals.net));
+}
+function calc() {
+  const v = Object.fromEntries([...calcForm.querySelectorAll("input[type=range]")].map((i) => [i.name, Number(i.value)]));
+  calcForm.querySelectorAll("input[type=range]").forEach((i) => i.style.setProperty("--fill", ((i.value - i.min) / (i.max - i.min) * 100) + "%"));
+  document.querySelector('[data-out="hours"]').textContent = v.hours + " h";
+  document.querySelector('[data-out="rate"]').textContent = kc(v.rate);
+  document.querySelector('[data-out="km"]').textContent = v.km + " km";
+  document.querySelector('[data-out="fuel"]').textContent = (v.fuel % 1 ? v.fuel.toFixed(1).replace(".", ",") : v.fuel) + " Kč";
+  const rent = calcPlan === "week" ? SITE.plans.week.price : SITE.plans.month.price * 12 / 52;
+  document.querySelector("[data-rent-label]").textContent = calcPlan === "week" ? "Rent" : "Rent, month plan per week";
+  const gross = v.hours * v.rate;
+  const fuelcost = v.hours * v.km * SITE.calculator.consumptionLper100km / 100 * v.fuel;
+  const target = { gross, rent, fuelcost, net: gross - rent - fuelcost };
+  if (hasGsap && motionOK) gsap.to(shown, { ...target, duration: .4, ease: "power2.out", overwrite: true, onUpdate: () => writeRes(shown) });
+  else { Object.assign(shown, target); writeRes(shown); }
+}
+calcForm.addEventListener("input", calc);
+document.querySelectorAll("[data-calc-plan]").forEach((b) => b.addEventListener("click", () => {
+  calcPlan = b.dataset.calcPlan;
+  document.querySelectorAll("[data-calc-plan]").forEach((x) => x.setAttribute("aria-pressed", String(x === b)));
+  calc();
+}));
+Object.assign(shown, { gross: 6000, rent: 1490, fuelcost: 315, net: 4195 });
+calc();
+
+/* ---------- application form ---------- */
+const form = document.getElementById("apply-form");
+const steps = [...form.querySelectorAll(".step")];
+const backBtn = form.querySelector("[data-back]"), nextBtn = form.querySelector("[data-next]");
+let step = 0;
+const startInput = document.getElementById("f-start");
+const tomorrow = new Date(Date.now() + 864e5); startInput.min = new Date().toISOString().slice(0, 10);
+startInput.value = tomorrow.toISOString().slice(0, 10);
+function showStep(i) {
+  step = i; steps.forEach((s, n) => (s.hidden = n !== i));
+  backBtn.hidden = i === 0; nextBtn.textContent = i === steps.length - 1 ? "Send application" : "Next";
+  document.querySelector("[data-progress-label]").textContent = `Step ${i + 1} of 3`;
+  document.querySelectorAll(".progress__bar span").forEach((s, n) => s.classList.toggle("is-done", n <= i));
+}
+function validStep() {
+  let ok = true;
+  steps[step].querySelectorAll("[required]").forEach((el) => {
+    const err = el.closest(".field, .step").querySelector(".field__error");
+    let valid = el.type === "checkbox" ? el.checked : el.value.trim() !== "";
+    if (el.type === "tel") valid = /^\+?[\d\s]{9,}$/.test(el.value.trim());
+    const errEl = el.type === "checkbox" ? el.closest(".step").querySelector(".check + .field__error") : err;
+    if (errEl) errEl.hidden = valid;
+    el.setAttribute("aria-invalid", String(!valid));
+    if (!valid && ok) { el.focus(); ok = false; }
+  });
+  return ok;
+}
+backBtn.addEventListener("click", () => showStep(step - 1));
+form.addEventListener("submit", (e) => {
+  e.preventDefault();
+  if (!validStep()) return;
+  if (step < steps.length - 1) { showStep(step + 1); return; }
+  const ch = form.querySelector("input[name=messenger]:checked").value;
+  document.querySelector("[data-success-channel]").textContent = ch === "call" ? "the phone" : ch === "telegram" ? "Telegram" : "WhatsApp";
+  form.hidden = true; document.querySelector(".progress").hidden = true;
+  const ok = document.getElementById("apply-success"); ok.hidden = false; ok.focus();
+});
+document.querySelectorAll("[data-plan]").forEach((a) => a.addEventListener("click", () => {
+  const r = form.querySelector(`input[name=plan][value="${a.dataset.plan}"]`); if (r) r.checked = true;
+}));
+document.querySelector("[data-plan-from-calc]").addEventListener("click", () => {
+  form.querySelector(`input[name=plan][value="${calcPlan}"]`).checked = true;
+});
+
+/* ---------- motion ---------- */
+if (hasGsap) {
+  gsap.registerPlugin(ScrollTrigger, SplitText);
+  const mm = gsap.matchMedia();
+  mm.add("(prefers-reduced-motion: no-preference)", () => {
+    const tl = gsap.timeline({ defaults: { ease: "expo.out" } });
+    tl.from(".hero__media img", { scale: 1.06, duration: 2.4, ease: "power2.out" }, 0)
+      .from(".hero__title .line", { yPercent: 110, duration: .95, stagger: .1 }, .15)
+      .from("[data-hero-fade]", { opacity: 0, y: 12, duration: .7, stagger: .08, ease: "power3.out" }, .65);
+
+    document.fonts.ready.then(() => {
+      document.querySelectorAll("[data-reveal]").forEach((el) => {
+        SplitText.create(el, { type: "lines", mask: "lines", autoSplit: true,
+          onSplit: (self) => {
+            self.masks.forEach((m) => { m.style.paddingBottom = "var(--mask-descender)"; m.style.marginBottom = "calc(var(--mask-descender) * -1)"; });
+            return gsap.from(self.lines, { yPercent: 110, duration: .9, ease: "expo.out", stagger: .08,
+              scrollTrigger: { trigger: el, start: "top 88%", once: true },
+              onComplete: () => self.revert() });
+          } });
+      });
+    });
+    gsap.utils.toArray(".card__media").forEach((m) => {
+      gsap.from(m, { clipPath: "inset(100% 0 0 0)", duration: 1, ease: "power3.out", scrollTrigger: { trigger: m, start: "top 85%", once: true } });
+      gsap.from(m.querySelector("img"), { scale: 1.08, duration: 1.4, ease: "power3.out", scrollTrigger: { trigger: m, start: "top 85%", once: true } });
+    });
+  });
+}
+</script>
+
+</body>
+</html>
